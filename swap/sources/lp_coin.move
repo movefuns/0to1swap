@@ -2,7 +2,6 @@ module move_funs_swap::lp_coin {
     use aptos_framework::coin;
     use std::string;
     use aptos_framework::coin::{BurnCapability, MintCapability, Coin};
-    use aptos_framework::event;
 
     friend  move_funs_swap::swap;
     friend  move_funs_swap::router;
@@ -18,9 +17,6 @@ module move_funs_swap::lp_coin {
     }
 
     public entry fun init<X,Y>(singer: &signer) {
-
-
-        event::
 
         let (burn, freeze, mint) = coin::initialize<Lp<X,Y>>(
             singer,

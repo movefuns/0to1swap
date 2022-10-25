@@ -18,7 +18,7 @@ module move_funs_swap::swap {
         assert!(signer::address_of(sender) == @move_funs_swap,ERROR_MUST_ADMIN);
         lp_coin::init<X,Y>(sender);
         move_to(sender, Pool<X, Y> {
-            coin_x: coin<>::zero(),
+            coin_x: coin::zero(),
             coin_y: coin::zero()
         })
     }
