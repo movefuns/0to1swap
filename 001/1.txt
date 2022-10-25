@@ -1,0 +1,16 @@
+
+## 获取测试apt
+curl --location --request POST https://faucet.devnet.aptoslabs.com/mint?address=0x5b20f9e4788b60e78f42f93ca9feaac9d8a1e3143a64d7e389c088927abee177&amount=10000000000000000
+
+## 浏览器地址
+https://explorer.aptoslabs.com/
+
+
+##
+aptos move run --assume-yes --function-id 0x5b20f9e4788b60e78f42f93ca9feaac9d8a1e3143a64d7e389c088927abee177::usdc::init
+
+
+
+
+##
+aptos move run --assume-yes --function-id 0x5b20f9e4788b60e78f42f93ca9feaac9d8a1e3143a64d7e389c088927abee177::router::add --type-args 0x1::aptos_coin::AptosCoin 0xbceeb6f002b3a24afff9401aa77dd673bd4b9a48872527a00782dd3686add775::mock_usdt::USDT --args u64:10000000000 u64:1000000000000 u64:1000

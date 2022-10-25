@@ -1,0 +1,13 @@
+[package]
+name = 'MoveFunsSwap'
+version = '1.0.0'
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = '46b7445f39429ace7138dfdf38e55c6c83f8a365'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[addresses]
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+move_funs_swap = "0xb0e40f8cf1da627d68db58f31c51dad6e2cc60c8ff8ef647cb5de6aa518b01cd"

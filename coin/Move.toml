@@ -1,0 +1,14 @@
+[package]
+name = 'MoveCoin'
+version = '1.0.0'
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = '46b7445f39429ace7138dfdf38e55c6c83f8a365'
+subdir = 'aptos-move/framework/aptos-framework'
+
+[addresses]
+std = "0x1"
+aptos_std = "0x1"
+aptos_framework = "0x1"
+move_funs_dao = "0x5b20f9e4788b60e78f42f93ca9feaac9d8a1e3143a64d7e389c088927abee177"
+
